@@ -1,0 +1,227 @@
+html {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  background-color: #ebecec;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+*:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+i {
+  vertical-align: middle;
+}
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.h1 {
+  font-size: 2em;
+}
+
+nav {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.nav-links {
+  text-decoration: underline;
+  order: 1;
+}
+
+.nav-options {
+  order: 2;
+}
+
+nav ul {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main-container {
+  background-color: #fffafa;
+  margin: 100px 50px;
+  border-radius: 10px;
+  height: 700px;
+}
+
+.hero {
+  width: 100%;
+  height: 500px;
+  padding: 25px 50px 25px 100px;
+  background: url("../img/hero.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.logo {
+  order: 0;
+  margin: 0;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.logo a {
+  position: absolute;
+}
+
+.logo .circle {
+  position: absolute;
+  top: -20%;
+  left: 33%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.nav-item {
+  font-size: 0.8rem;
+  padding: 0 5px;
+  letter-spacing: 0.01rem;
+}
+
+.sign-in {
+  background-color: #514e4c;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+select {
+  font-size: 0.8rem;
+  border-style: hidden;
+  background-color: transparent;
+}
+
+@media screen and (max-width: 550px) {
+  .nav-links .nav-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 981px) {
+  .nav-links {
+    margin: 40px auto 0 auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    order: 2;
+  }
+  .nav-options {
+    order: 1;
+  }
+
+  .nav-links .nav-item {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .nav-options .nav-item {
+    margin-left: 10px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+}
+
+.arrow {
+  padding: 0 5px;
+}
+
+.travel-container {
+  width: 100%;
+  background-color: white;
+  height: 200px;
+  z-index: 1;
+}
+
+.travel-options {
+  background-color: black;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 100px;
+  width: 50%;
+}
+.travel-option {
+  font-size: 1.1rem;
+  border: none;
+  padding: 20px;
+  margin: 0 20px 0;
+  background-color: inherit;
+  color: white;
+}
+
+.travel-option:first-of-type {
+  border: none;
+  margin-left: 0;
+  background-color: white;
+  color: black;
+  z-index: 1;
+}
+.option-icon {
+  padding-right: 10px;
+}
+
+.search-btn {
+  width: 100%;
+}
+
+.search-btn button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  float: right;
+  font-size: 1.2rem;
+}
+
+.search-arrow {
+  padding-left: 5px;
+}
+
+.trip-container {
+  margin-top: 40px;
+}
+
+.trip-options {
+  padding-left: 30px;
+}
+
+.trip-option {
+  margin-right: 30px;
+}

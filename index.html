@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlyHigh</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="hero">
+        <header>
+          <nav class="d-flex">
+            <div class="logo">
+              <div class="circle"></div>
+              <a href="#"><strong>FlyHigh</strong></a>
+            </div>
+            <ul class="d-flex nav-links">
+              <li><a href="#" class="nav-item">Holiday Packages</a></li>
+              <li><a href="#" class="nav-item">Flight Schedule</a></li>
+              <li><a href="#" class="nav-item">Account Settings</a></li>
+              <li><a href="#" class="nav-item">Manage Booking</a></li>
+            </ul>
+            <ul class="d-flex nav-options">
+              <li><a href="#" class="nav-item">Register</a></li>
+              <li><a href="#" class="nav-item sign-in">Sign In</a></li>
+              <li>
+                <select id="lang" name="lang" class="nav-item">
+                  <option value="en" selected>EN</option>
+                  <option value="es">ES</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="hero-text">
+          <p class="h1">
+            Hey Buddy! Where are you <br /><strong>Flying</strong> to?
+          </p>
+          <p>
+            Explore Now
+            <i class="fa fa-long-arrow-right arrow" aria-hidden="true"></i>
+          </p>
+        </div>
+        <div class="travel-container">
+          <div class="travel-options">
+            <button class="travel-option">
+              <i class="fa fa-plane option-icon" aria-hidden="true"></i> Flight
+            </button>
+            <button class="travel-option">
+              <i class="fa fa-building option-icon" aria-hidden="true"></i>Hotel
+            </button>
+            <button class="travel-option">
+              <i class="fa fa-car option-icon" aria-hidden="true"></i>Rent a Car
+            </button>
+          </div>
+          <div class="trip-container">
+            <div class="trip-options">
+              <select id="trip-type" name="trip-type" class="trip-option">
+                <option value="round-trip" selected>Round Trip</option>
+                <option value="one-way">One Way</option>
+              </select>
+              <select
+                id="passengers-num"
+                name="passengers-num"
+                class="trip-option"
+              >
+                <option value="one">01 Passengers</option>
+                <option value="two">02 Passengers</option>
+                <option value="three">03 Passengers</option>
+                <option value="four" selected>04 Passengers</option>
+              </select>
+              <select id="trip-class" name="trip-class" class="trip-option">
+                <option value="first">First Class</option>
+                <option value="business" selected>Business Class</option>
+                <option value="economy">Economy Class</option>
+              </select>
+            </div>
+          </div>
+          <div class="search-btn">
+            <button>
+              Search Flights
+              <i
+                class="fa fa-long-arrow-right search-arrow"
+                aria-hidden="true"
+                style="font-size: 1.5rem;"
+              ></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
