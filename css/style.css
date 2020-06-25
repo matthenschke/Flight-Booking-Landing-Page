@@ -37,6 +37,7 @@ i {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 .d-flex {
@@ -120,6 +121,107 @@ select {
   background-color: transparent;
 }
 
+.arrow {
+  padding: 0 5px;
+}
+
+.travel-container {
+  width: 100%;
+  height: 200px;
+  z-index: 1;
+}
+
+.travel-options {
+  display: flex;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  margin-top: 100px;
+  width: 50%;
+}
+.travel-option {
+  font-size: 1.1rem;
+  border: none;
+  padding: 20px;
+  background-color: black;
+  color: white;
+}
+
+.travel-option:first-of-type {
+  border: none;
+  border-top-left-radius: 10px;
+  margin-left: 0;
+  background-color: white;
+  color: black;
+}
+
+.travel-option:last-of-type {
+  border-top-right-radius: 10px;
+}
+.option-icon {
+  padding-right: 10px;
+}
+
+.search-btn {
+  width: 100%;
+}
+
+.search-arrow {
+  padding-left: 5px;
+}
+
+.trip-container {
+  background-color: white;
+  padding: 40px 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.trip-options {
+  margin-bottom: 30px;
+}
+
+.trip-option {
+  margin-right: 30px;
+}
+
+.info-container {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  width: 450px;
+  padding: 5px 40px;
+  background-color: white;
+}
+
+.trip-circle {
+  z-index: 1;
+  margin: 0 -15px;
+  align-self: center;
+  border: 1px solid #d3d3d3;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i {
+  display: block;
+}
+
+.search-btn button {
+  margin-top: 50px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  float: right;
+  font-size: 1.2rem;
+}
+
 @media screen and (max-width: 981px) {
   .nav-links {
     margin: 40px auto 0 auto;
@@ -153,102 +255,4 @@ select {
     justify-content: center;
     flex-direction: column;
   }
-}
-
-.arrow {
-  padding: 0 5px;
-}
-
-.travel-container {
-  width: 100%;
-  height: 200px;
-  z-index: 1;
-}
-
-.travel-options {
-  background-color: black;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  margin-top: 100px;
-  width: 50%;
-}
-.travel-option {
-  font-size: 1.1rem;
-  border: none;
-  padding: 20px;
-  margin: 0 20px 0;
-  background-color: inherit;
-  color: white;
-}
-
-.travel-option:first-of-type {
-  border: none;
-  margin-left: 0;
-  background-color: white;
-  color: black;
-  z-index: 1;
-}
-.option-icon {
-  padding-right: 10px;
-}
-
-.search-btn {
-  width: 100%;
-}
-
-.search-btn button {
-  padding: 15px 30px;
-  border: none;
-  border-radius: 10px;
-  background-color: black;
-  color: white;
-  float: right;
-  font-size: 1.2rem;
-}
-
-.search-arrow {
-  padding-left: 5px;
-}
-
-.trip-container {
-  background-color: white;
-  margin-top: 40px;
-  padding-left: 30px;
-}
-
-.trip-options {
-  margin-bottom: 30px;
-}
-
-.trip-option {
-  margin-right: 30px;
-}
-
-/* .trip-info {
-  position: relative;
-} */
-
-.info-container {
-  border: 1px solid #d3d3d3;
-  border-radius: 10px;
-  width: 450px;
-  padding: 5px 40px;
-  background-color: white;
-}
-
-.circle {
-  align-self: center;
-  background-color: white;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* position: absolute;
-  left: 25%; */
-}
-
-.circle i {
-  display: block;
 }
