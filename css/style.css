@@ -133,7 +133,7 @@ select.nav-item {
 
 .travel-container {
   width: 100%;
-  max-height: 200px;
+  /* max-height: 200px; */
   z-index: 1;
 }
 
@@ -219,7 +219,7 @@ select.trip-option {
 }
 
 .search-btn button {
-  margin-top: 50px;
+  margin-top: 20px;
   padding: 15px 30px;
   border: none;
   border-radius: 10px;
@@ -229,15 +229,18 @@ select.trip-option {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 981px) {
-  .nav-links {
-    margin: 40px auto 0 auto;
-    flex-wrap: nowrap;
-    justify-content: center;
-    order: 2;
+@media screen and (max-width: 990px) {
+  .logo {
+    margin: 0 30px 0 0;
   }
   .nav-options {
     order: 1;
+  }
+  .nav-links {
+    margin: 40px auto 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
   }
 
   .nav-links .nav-item {
@@ -264,19 +267,25 @@ select.trip-option {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin-bottom: 10px;
   }
-
-  /* select.trip-option {
-    font-size: 0.9rem;
-  } */
 }
 
 @media screen and (max-width: 610px) {
-  select.trip-option {
-    font-size: 0.9rem;
+  .trip-container {
+    padding: 40px 10px;
   }
   .trip-options {
+    display: flex;
     justify-content: center;
-    margin-right: 30px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  select.trip-option {
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
   }
 }
