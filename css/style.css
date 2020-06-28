@@ -16,7 +16,7 @@ body {
 body {
   width: 100%;
   height: 100%;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #ebecec;
 }
 
@@ -66,13 +66,16 @@ nav ul {
 }
 
 main {
-  background-color: #fffafa;
+  background-color: white;
   margin: 100px 50px;
-  border-radius: 10px;
-  height: 700px;
+  border-radius: 20px;
+  min-height: 700px;
+  max-height: 1000px;
 }
 
 .hero {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   width: 100%;
   height: 500px;
   padding: 25px 50px 25px 100px;
@@ -116,9 +119,12 @@ main {
 }
 
 select {
-  font-size: 0.8rem;
   border-style: hidden;
   background-color: transparent;
+}
+
+select.nav-item {
+  font-size: 0.8rem;
 }
 
 .arrow {
@@ -127,7 +133,7 @@ select {
 
 .travel-container {
   width: 100%;
-  height: 200px;
+  max-height: 200px;
   z-index: 1;
 }
 
@@ -181,7 +187,8 @@ select {
   margin-bottom: 30px;
 }
 
-.trip-option {
+select.trip-option {
+  font-size: 1rem;
   margin-right: 30px;
 }
 
@@ -236,6 +243,9 @@ select {
   .nav-links .nav-item {
     padding: 0 10px;
   }
+  .travel-options {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -254,5 +264,19 @@ select {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  /* select.trip-option {
+    font-size: 0.9rem;
+  } */
+}
+
+@media screen and (max-width: 610px) {
+  select.trip-option {
+    font-size: 0.9rem;
+  }
+  .trip-options {
+    justify-content: center;
+    margin-right: 30px;
   }
 }
